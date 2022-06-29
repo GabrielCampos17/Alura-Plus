@@ -1,0 +1,145 @@
+:root {
+  --main-white: #ffffff;
+  --secondary-gray: #c0c0c0;
+  --blue-button: #167bf7;
+  --bakground-color: #00030c;
+  --main-font: "Inter", sans-serif;
+  --background-blue-effect: #3c92fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bakground-color);
+  color: var(--main-white);
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.main {
+  background-image: url(./assets//Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.container__box {
+  margin: 0 6em;
+}
+.container__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.container__image {
+  margin: 1em 0 2em 0;
+}
+
+.container__button {
+  background-color: var(--blue-button);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--main-white);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+.container__button:hover {
+  color: var(--bakground-color);
+  background-color: var(--background-blue-effect);
+}
+
+.secondary_button {
+  background-color: transparent;
+  border: 2px solid var(--main-white);
+}
+.container__warning {
+  font-size: 0.75rem;
+  color: var(--secondary-gray);
+}
+.secondary {
+  align-items: center;
+  margin: 0 10em;
+}
+.secondary__image {
+  width: 80%;
+}
+.description__title {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 0.1em;
+}
+
+.description__text {
+  color: var(--secondary-gray);
+}
+
+.button_secondary {
+  display: inline-block;
+  margin-top: 1em;
+}
+.container__description {
+  padding: 2em;
+}
+.devices {
+  text-align: center;
+}
+
+.devices__list {
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+  margin: 5em 0;
+}
+
+.devices__title {
+  font-size: 3rem;
+  color: var(--main-white);
+}
+
+.list__item {
+  font-size: 2rem;
+  color: var(--main-white);
+}
+.baseboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.baseboard__list{
+  display: flex;
+  list-style: none;
+  margin: 2em 0;
+}
+
+.list__link a {
+  margin: 0 0.5em;
+  text-decoration: none;
+  color: var(--main-white);
+
+}
+.list__link a:hover {
+  color: var(--blue-button);
+  transition: all 1ms ease-in-out ;
+}
+.list__link a:active {
+  color: darkcyan
+}
+
+.baseboard__text {
+  color: var(--secondary-gray);
+  margin: 1em 0;
+  width: 75rem;
+  font-size: 0.875rem;
+}
+
